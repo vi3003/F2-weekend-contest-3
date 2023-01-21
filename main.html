@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <style>
+        body {
+           margin: 30px;
+           color: antiquewhite;
+           font-family: sans-serif;
+           background-color: #022d02;
+           opacity: 0.8;
+           background-image: radial-gradient(#c2c29b 1.6500000000000001px, #022d02 1.6500000000000001px);
+           background-size: 33px 33px;
+              }
+        body > div {
+            text-align: center;
+              }
+        body input {
+            background-color: rgb(4, 46, 4);
+            color: antiquewhite;
+            font-size: 24px;
+            font-weight: 300;
+            border: none;
+            border-bottom: 1px solid antiquewhite;
+               }
+        body > p {
+            font-size: 8px;
+               }
+        body button {
+            width: 120px;
+            height: 40px;
+            font-size: 24px;
+            background-color: antiquewhite;
+               }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <h1>Sign Up</h1>
+        <input type="text" id="name" placeholder="Full Name" />
+        <br />
+        <p id="Email"></p>
+        <input type="email" id="email" placeholder="Email" />
+        <br />
+        <p id="Password"></p>
+        <input type="password" id="password" placeholder="Password" />
+        <br />
+        <p id="Confirm"></p>
+        <input type="password" id="confirm_password" placeholder="Confirm Password" +/>
+        <br />
+        <p id="Confirm_err"></p>
+        <button type="submit">Signup</button>
+      </form>
+      <p id="userExists"></p>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

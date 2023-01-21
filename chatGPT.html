@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT</title>
+    <style>
+      body {
+        margin: 30px;
+        background-color: #022d02;
+        opacity: 0.8;
+        background-image: radial-gradient(#c2c29b 1.6500000000000001px, #022d02 1.6500000000000001px);
+        background-size: 33px 33px;
+        color: antiquewhite;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 30px;
+      }
+      textarea {
+        background-color: #022d02;
+        color: antiquewhite;
+        width: 50%;
+        height: 100px;
+        font-size: 30px;
+      }
+      img {
+        width: 30%;
+        height: 30%;
+      }
+      button {
+        margin: 10px 0px;
+        width: 120px;
+        height: 40px;
+        font-size: 24px;
+        background-color: #c2c29b;
+      }
+      input {
+        background-color: #022d02;
+        color: antiquewhite;
+        font-size: 24px;
+        font-weight: 300;
+        margin: 10px 0px;
+        border: none;
+        border-bottom: 1px solid antiquewhite;
+        margin: 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <textarea
+          id="question"
+          placeholder="write your question here"
+        ></textarea>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+      <p id="answer"></p>
+    </div>
+  </body>
+  <script src="./chatGPT.js"></script>
+</html>
